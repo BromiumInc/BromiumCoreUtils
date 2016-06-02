@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FD459DC1D004A92008A77DA /* BRUARCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459C91D004A92008A77DA /* BRUARCUtils.h */; };
+		8FD459DD1D004A92008A77DA /* BRUArithmetic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459CA1D004A92008A77DA /* BRUArithmetic.h */; };
+		8FD459DE1D004A92008A77DA /* BRUAsserts.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459CB1D004A92008A77DA /* BRUAsserts.h */; };
+		8FD459DF1D004A92008A77DA /* BRUAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD459CC1D004A92008A77DA /* BRUAsserts.m */; };
+		8FD459E01D004A92008A77DA /* BRUBaseDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459CD1D004A92008A77DA /* BRUBaseDefines.h */; };
+		8FD459E11D004A92008A77DA /* BRUConcurrentBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459CE1D004A92008A77DA /* BRUConcurrentBox.h */; };
+		8FD459E21D004A92008A77DA /* BRUConcurrentBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD459CF1D004A92008A77DA /* BRUConcurrentBox.m */; };
+		8FD459E31D004A92008A77DA /* BRUConcurrentVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459D01D004A92008A77DA /* BRUConcurrentVariable.h */; };
+		8FD459E41D004A92008A77DA /* BRUConcurrentVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD459D11D004A92008A77DA /* BRUConcurrentVariable.m */; };
+		8FD459E51D004A92008A77DA /* BRUDispatchUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459D21D004A92008A77DA /* BRUDispatchUtils.h */; };
+		8FD459E61D004A92008A77DA /* BRUEitherErrorOrSuccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459D31D004A92008A77DA /* BRUEitherErrorOrSuccess.h */; };
+		8FD459E71D004A92008A77DA /* BRUEitherErrorOrSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD459D41D004A92008A77DA /* BRUEitherErrorOrSuccess.m */; };
+		8FD459E81D004A92008A77DA /* BRUNullabilityUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459D51D004A92008A77DA /* BRUNullabilityUtils.h */; };
+		8FD459E91D004A92008A77DA /* BRUResourceCleanup.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459D61D004A92008A77DA /* BRUResourceCleanup.h */; };
+		8FD459EA1D004A92008A77DA /* BRUResourceCleanup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD459D71D004A92008A77DA /* BRUResourceCleanup.m */; };
+		8FD459EB1D004A92008A77DA /* BRUTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459D81D004A92008A77DA /* BRUTask.h */; };
+		8FD459EC1D004A92008A77DA /* BRUTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD459D91D004A92008A77DA /* BRUTask.m */; };
+		8FD459ED1D004A92008A77DA /* BRUTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD459DA1D004A92008A77DA /* BRUTimer.h */; };
+		8FD459EE1D004A92008A77DA /* BRUTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD459DB1D004A92008A77DA /* BRUTimer.m */; };
+		8FD459F81D004DA2008A77DA /* libBromiumCoreUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD459BD1D004981008A77DA /* libBromiumCoreUtils.a */; };
+		8FD45A041D004EFD008A77DA /* BRUConcurrentBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD459FF1D004EFD008A77DA /* BRUConcurrentBoxTests.m */; };
+		8FD45A051D004EFD008A77DA /* BRUTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A001D004EFD008A77DA /* BRUTaskTests.m */; };
+		8FD45A061D004EFD008A77DA /* BRUTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A011D004EFD008A77DA /* BRUTimerTests.m */; };
+		8FD45A071D004EFD008A77DA /* BRUResourceCleanupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A021D004EFD008A77DA /* BRUResourceCleanupTests.m */; };
+		8FD45A081D004EFD008A77DA /* BRUConcurrentVariableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A031D004EFD008A77DA /* BRUConcurrentVariableTests.m */; };
+		8FD45A0A1D004F54008A77DA /* BRUTemporaryFilesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A091D004F54008A77DA /* BRUTemporaryFilesTests.m */; };
+		8FD45A0D1D004F5C008A77DA /* BRUTemporaryFiles.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD45A0B1D004F5C008A77DA /* BRUTemporaryFiles.h */; };
+		8FD45A0E1D004F5C008A77DA /* BRUTemporaryFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A0C1D004F5C008A77DA /* BRUTemporaryFiles.m */; };
+		8FD45A111D005004008A77DA /* BRUSetDiffFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD45A0F1D005004008A77DA /* BRUSetDiffFormatter.h */; };
+		8FD45A121D005004008A77DA /* BRUSetDiffFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A101D005004008A77DA /* BRUSetDiffFormatter.m */; };
+		8FD45A141D005062008A77DA /* BRUSetDiffFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A131D005062008A77DA /* BRUSetDiffFormatterTests.m */; };
+		8FD45A171D0050D1008A77DA /* BRUInternalMaybeDDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD45A151D0050D1008A77DA /* BRUInternalMaybeDDLog.h */; };
+		8FD45A181D0050D1008A77DA /* BRUInternalMaybeDDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A161D0050D1008A77DA /* BRUInternalMaybeDDLog.m */; };
+		8FD45A1B1D00570C008A77DA /* BRUDeferred.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A191D00570C008A77DA /* BRUDeferred.m */; };
+		8FD45A1C1D00570C008A77DA /* BRUDeferred.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD45A1A1D00570C008A77DA /* BRUDeferred.h */; };
+		8FD45A1E1D005712008A77DA /* BRUDeferredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD45A1D1D005712008A77DA /* BRUDeferredTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FD459F91D004DA2008A77DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD459B51D004981008A77DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD459BC1D004981008A77DA;
+			remoteInfo = BromiumCoreUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FD459BD1D004981008A77DA /* libBromiumCoreUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBromiumCoreUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD459C91D004A92008A77DA /* BRUARCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUARCUtils.h; sourceTree = "<group>"; };
+		8FD459CA1D004A92008A77DA /* BRUArithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUArithmetic.h; sourceTree = "<group>"; };
+		8FD459CB1D004A92008A77DA /* BRUAsserts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUAsserts.h; sourceTree = "<group>"; };
+		8FD459CC1D004A92008A77DA /* BRUAsserts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUAsserts.m; sourceTree = "<group>"; };
+		8FD459CD1D004A92008A77DA /* BRUBaseDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUBaseDefines.h; sourceTree = "<group>"; };
+		8FD459CE1D004A92008A77DA /* BRUConcurrentBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUConcurrentBox.h; sourceTree = "<group>"; };
+		8FD459CF1D004A92008A77DA /* BRUConcurrentBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUConcurrentBox.m; sourceTree = "<group>"; };
+		8FD459D01D004A92008A77DA /* BRUConcurrentVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUConcurrentVariable.h; sourceTree = "<group>"; };
+		8FD459D11D004A92008A77DA /* BRUConcurrentVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUConcurrentVariable.m; sourceTree = "<group>"; };
+		8FD459D21D004A92008A77DA /* BRUDispatchUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUDispatchUtils.h; sourceTree = "<group>"; };
+		8FD459D31D004A92008A77DA /* BRUEitherErrorOrSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUEitherErrorOrSuccess.h; sourceTree = "<group>"; };
+		8FD459D41D004A92008A77DA /* BRUEitherErrorOrSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUEitherErrorOrSuccess.m; sourceTree = "<group>"; };
+		8FD459D51D004A92008A77DA /* BRUNullabilityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUNullabilityUtils.h; sourceTree = "<group>"; };
+		8FD459D61D004A92008A77DA /* BRUResourceCleanup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUResourceCleanup.h; sourceTree = "<group>"; };
+		8FD459D71D004A92008A77DA /* BRUResourceCleanup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUResourceCleanup.m; sourceTree = "<group>"; };
+		8FD459D81D004A92008A77DA /* BRUTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUTask.h; sourceTree = "<group>"; };
+		8FD459D91D004A92008A77DA /* BRUTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUTask.m; sourceTree = "<group>"; };
+		8FD459DA1D004A92008A77DA /* BRUTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUTimer.h; sourceTree = "<group>"; };
+		8FD459DB1D004A92008A77DA /* BRUTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUTimer.m; sourceTree = "<group>"; };
+		8FD459F31D004DA2008A77DA /* BromiumCoreUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BromiumCoreUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD459F71D004DA2008A77DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD459FF1D004EFD008A77DA /* BRUConcurrentBoxTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUConcurrentBoxTests.m; sourceTree = "<group>"; };
+		8FD45A001D004EFD008A77DA /* BRUTaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUTaskTests.m; sourceTree = "<group>"; };
+		8FD45A011D004EFD008A77DA /* BRUTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUTimerTests.m; sourceTree = "<group>"; };
+		8FD45A021D004EFD008A77DA /* BRUResourceCleanupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUResourceCleanupTests.m; sourceTree = "<group>"; };
+		8FD45A031D004EFD008A77DA /* BRUConcurrentVariableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUConcurrentVariableTests.m; sourceTree = "<group>"; };
+		8FD45A091D004F54008A77DA /* BRUTemporaryFilesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUTemporaryFilesTests.m; sourceTree = "<group>"; };
+		8FD45A0B1D004F5C008A77DA /* BRUTemporaryFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUTemporaryFiles.h; sourceTree = "<group>"; };
+		8FD45A0C1D004F5C008A77DA /* BRUTemporaryFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUTemporaryFiles.m; sourceTree = "<group>"; };
+		8FD45A0F1D005004008A77DA /* BRUSetDiffFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUSetDiffFormatter.h; sourceTree = "<group>"; };
+		8FD45A101D005004008A77DA /* BRUSetDiffFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUSetDiffFormatter.m; sourceTree = "<group>"; };
+		8FD45A131D005062008A77DA /* BRUSetDiffFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUSetDiffFormatterTests.m; sourceTree = "<group>"; };
+		8FD45A151D0050D1008A77DA /* BRUInternalMaybeDDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUInternalMaybeDDLog.h; sourceTree = "<group>"; };
+		8FD45A161D0050D1008A77DA /* BRUInternalMaybeDDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUInternalMaybeDDLog.m; sourceTree = "<group>"; };
+		8FD45A191D00570C008A77DA /* BRUDeferred.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUDeferred.m; sourceTree = "<group>"; };
+		8FD45A1A1D00570C008A77DA /* BRUDeferred.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUDeferred.h; sourceTree = "<group>"; };
+		8FD45A1D1D005712008A77DA /* BRUDeferredTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUDeferredTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FD459BA1D004981008A77DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD459F01D004DA2008A77DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD459F81D004DA2008A77DA /* libBromiumCoreUtils.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FD459B41D004981008A77DA = {
+			isa = PBXGroup;
+			children = (
+				8FD459BF1D004981008A77DA /* BromiumCoreUtils */,
+				8FD459F41D004DA2008A77DA /* BromiumCoreUtilsTests */,
+				8FD459BE1D004981008A77DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FD459BE1D004981008A77DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FD459BD1D004981008A77DA /* libBromiumCoreUtils.a */,
+				8FD459F31D004DA2008A77DA /* BromiumCoreUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FD459BF1D004981008A77DA /* BromiumCoreUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8FD459C91D004A92008A77DA /* BRUARCUtils.h */,
+				8FD459CA1D004A92008A77DA /* BRUArithmetic.h */,
+				8FD459CB1D004A92008A77DA /* BRUAsserts.h */,
+				8FD459CC1D004A92008A77DA /* BRUAsserts.m */,
+				8FD459CD1D004A92008A77DA /* BRUBaseDefines.h */,
+				8FD459CE1D004A92008A77DA /* BRUConcurrentBox.h */,
+				8FD459CF1D004A92008A77DA /* BRUConcurrentBox.m */,
+				8FD459D01D004A92008A77DA /* BRUConcurrentVariable.h */,
+				8FD459D11D004A92008A77DA /* BRUConcurrentVariable.m */,
+				8FD45A1A1D00570C008A77DA /* BRUDeferred.h */,
+				8FD45A191D00570C008A77DA /* BRUDeferred.m */,
+				8FD459D21D004A92008A77DA /* BRUDispatchUtils.h */,
+				8FD459D31D004A92008A77DA /* BRUEitherErrorOrSuccess.h */,
+				8FD459D41D004A92008A77DA /* BRUEitherErrorOrSuccess.m */,
+				8FD45A151D0050D1008A77DA /* BRUInternalMaybeDDLog.h */,
+				8FD45A161D0050D1008A77DA /* BRUInternalMaybeDDLog.m */,
+				8FD459D51D004A92008A77DA /* BRUNullabilityUtils.h */,
+				8FD459D61D004A92008A77DA /* BRUResourceCleanup.h */,
+				8FD459D71D004A92008A77DA /* BRUResourceCleanup.m */,
+				8FD45A0F1D005004008A77DA /* BRUSetDiffFormatter.h */,
+				8FD45A101D005004008A77DA /* BRUSetDiffFormatter.m */,
+				8FD459D81D004A92008A77DA /* BRUTask.h */,
+				8FD459D91D004A92008A77DA /* BRUTask.m */,
+				8FD45A0B1D004F5C008A77DA /* BRUTemporaryFiles.h */,
+				8FD45A0C1D004F5C008A77DA /* BRUTemporaryFiles.m */,
+				8FD459DA1D004A92008A77DA /* BRUTimer.h */,
+				8FD459DB1D004A92008A77DA /* BRUTimer.m */,
+			);
+			path = BromiumCoreUtils;
+			sourceTree = "<group>";
+		};
+		8FD459F41D004DA2008A77DA /* BromiumCoreUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FD459FF1D004EFD008A77DA /* BRUConcurrentBoxTests.m */,
+				8FD45A031D004EFD008A77DA /* BRUConcurrentVariableTests.m */,
+				8FD45A1D1D005712008A77DA /* BRUDeferredTests.m */,
+				8FD45A021D004EFD008A77DA /* BRUResourceCleanupTests.m */,
+				8FD45A131D005062008A77DA /* BRUSetDiffFormatterTests.m */,
+				8FD45A001D004EFD008A77DA /* BRUTaskTests.m */,
+				8FD45A091D004F54008A77DA /* BRUTemporaryFilesTests.m */,
+				8FD45A011D004EFD008A77DA /* BRUTimerTests.m */,
+				8FD459F71D004DA2008A77DA /* Info.plist */,
+			);
+			path = BromiumCoreUtilsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8FD459BB1D004981008A77DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD459E01D004A92008A77DA /* BRUBaseDefines.h in Headers */,
+				8FD459E11D004A92008A77DA /* BRUConcurrentBox.h in Headers */,
+				8FD459DE1D004A92008A77DA /* BRUAsserts.h in Headers */,
+				8FD459E51D004A92008A77DA /* BRUDispatchUtils.h in Headers */,
+				8FD459E81D004A92008A77DA /* BRUNullabilityUtils.h in Headers */,
+				8FD459DD1D004A92008A77DA /* BRUArithmetic.h in Headers */,
+				8FD459EB1D004A92008A77DA /* BRUTask.h in Headers */,
+				8FD45A0D1D004F5C008A77DA /* BRUTemporaryFiles.h in Headers */,
+				8FD459E61D004A92008A77DA /* BRUEitherErrorOrSuccess.h in Headers */,
+				8FD459DC1D004A92008A77DA /* BRUARCUtils.h in Headers */,
+				8FD459E31D004A92008A77DA /* BRUConcurrentVariable.h in Headers */,
+				8FD459ED1D004A92008A77DA /* BRUTimer.h in Headers */,
+				8FD459E91D004A92008A77DA /* BRUResourceCleanup.h in Headers */,
+				8FD45A1C1D00570C008A77DA /* BRUDeferred.h in Headers */,
+				8FD45A111D005004008A77DA /* BRUSetDiffFormatter.h in Headers */,
+				8FD45A171D0050D1008A77DA /* BRUInternalMaybeDDLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8FD459BC1D004981008A77DA /* BromiumCoreUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD459C61D004981008A77DA /* Build configuration list for PBXNativeTarget "BromiumCoreUtils" */;
+			buildPhases = (
+				8FD459B91D004981008A77DA /* Sources */,
+				8FD459BA1D004981008A77DA /* Frameworks */,
+				8FD459BB1D004981008A77DA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BromiumCoreUtils;
+			productName = BromiumCoreUtils;
+			productReference = 8FD459BD1D004981008A77DA /* libBromiumCoreUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8FD459F21D004DA2008A77DA /* BromiumCoreUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD459FB1D004DA2008A77DA /* Build configuration list for PBXNativeTarget "BromiumCoreUtilsTests" */;
+			buildPhases = (
+				8FD459EF1D004DA2008A77DA /* Sources */,
+				8FD459F01D004DA2008A77DA /* Frameworks */,
+				8FD459F11D004DA2008A77DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FD459FA1D004DA2008A77DA /* PBXTargetDependency */,
+			);
+			name = BromiumCoreUtilsTests;
+			productName = BromiumCoreUtilsTests;
+			productReference = 8FD459F31D004DA2008A77DA /* BromiumCoreUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FD459B51D004981008A77DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Bromium UK Ltd.";
+				TargetAttributes = {
+					8FD459BC1D004981008A77DA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8FD459F21D004DA2008A77DA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 8FD459B81D004981008A77DA /* Build configuration list for PBXProject "BromiumCoreUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8FD459B41D004981008A77DA;
+			productRefGroup = 8FD459BE1D004981008A77DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FD459BC1D004981008A77DA /* BromiumCoreUtils */,
+				8FD459F21D004DA2008A77DA /* BromiumCoreUtilsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FD459F11D004DA2008A77DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FD459B91D004981008A77DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD459E21D004A92008A77DA /* BRUConcurrentBox.m in Sources */,
+				8FD459DF1D004A92008A77DA /* BRUAsserts.m in Sources */,
+				8FD459E71D004A92008A77DA /* BRUEitherErrorOrSuccess.m in Sources */,
+				8FD45A1B1D00570C008A77DA /* BRUDeferred.m in Sources */,
+				8FD459EE1D004A92008A77DA /* BRUTimer.m in Sources */,
+				8FD45A181D0050D1008A77DA /* BRUInternalMaybeDDLog.m in Sources */,
+				8FD45A121D005004008A77DA /* BRUSetDiffFormatter.m in Sources */,
+				8FD459E41D004A92008A77DA /* BRUConcurrentVariable.m in Sources */,
+				8FD45A0E1D004F5C008A77DA /* BRUTemporaryFiles.m in Sources */,
+				8FD459EC1D004A92008A77DA /* BRUTask.m in Sources */,
+				8FD459EA1D004A92008A77DA /* BRUResourceCleanup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD459EF1D004DA2008A77DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD45A071D004EFD008A77DA /* BRUResourceCleanupTests.m in Sources */,
+				8FD45A051D004EFD008A77DA /* BRUTaskTests.m in Sources */,
+				8FD45A1E1D005712008A77DA /* BRUDeferredTests.m in Sources */,
+				8FD45A081D004EFD008A77DA /* BRUConcurrentVariableTests.m in Sources */,
+				8FD45A141D005062008A77DA /* BRUSetDiffFormatterTests.m in Sources */,
+				8FD45A041D004EFD008A77DA /* BRUConcurrentBoxTests.m in Sources */,
+				8FD45A061D004EFD008A77DA /* BRUTimerTests.m in Sources */,
+				8FD45A0A1D004F54008A77DA /* BRUTemporaryFilesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FD459FA1D004DA2008A77DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD459BC1D004981008A77DA /* BromiumCoreUtils */;
+			targetProxy = 8FD459F91D004DA2008A77DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8FD459C41D004981008A77DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8FD459C51D004981008A77DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8FD459C71D004981008A77DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				OTHER_CFLAGS = (
+					"-fsanitize=bool",
+					"-fsanitize=bounds",
+					"-fsanitize=enum",
+					"-fsanitize=integer-divide-by-zero",
+					"-fsanitize=null",
+					"-fsanitize=return",
+					"-fsanitize=signed-integer-overflow",
+					"-fsanitize=unreachable",
+					"-fsanitize=vla-bound",
+					"-fsanitize-undefined-trap-on-error",
+					"-Wall",
+					"-Wextra",
+					"-Weverything",
+					"-Wsign-conversion",
+					"-Wconversion",
+					"-Werror=overriding-method-mismatch",
+					"-Werror=protocol",
+					"-Werror=incomplete-implementation",
+					"-fno-strict-aliasing",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-gnu-conditional-omitted-operand",
+					"-Wno-cstring-format-directive",
+					"-Wno-direct-ivar-access",
+					"-Wno-explicit-ownership-type",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FD459C81D004981008A77DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				OTHER_CFLAGS = (
+					"-fsanitize=bool",
+					"-fsanitize=bounds",
+					"-fsanitize=enum",
+					"-fsanitize=integer-divide-by-zero",
+					"-fsanitize=null",
+					"-fsanitize=return",
+					"-fsanitize=signed-integer-overflow",
+					"-fsanitize=unreachable",
+					"-fsanitize=vla-bound",
+					"-fsanitize-undefined-trap-on-error",
+					"-Wall",
+					"-Wextra",
+					"-Weverything",
+					"-Wsign-conversion",
+					"-Wconversion",
+					"-Werror=overriding-method-mismatch",
+					"-Werror=protocol",
+					"-Werror=incomplete-implementation",
+					"-fno-strict-aliasing",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-gnu-conditional-omitted-operand",
+					"-Wno-cstring-format-directive",
+					"-Wno-direct-ivar-access",
+					"-Wno-explicit-ownership-type",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8FD459FC1D004DA2008A77DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = BromiumCoreUtils/;
+				INFOPLIST_FILE = BromiumCoreUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bromium.BromiumCoreUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FD459FD1D004DA2008A77DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = BromiumCoreUtils/;
+				INFOPLIST_FILE = BromiumCoreUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bromium.BromiumCoreUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FD459B81D004981008A77DA /* Build configuration list for PBXProject "BromiumCoreUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD459C41D004981008A77DA /* Debug */,
+				8FD459C51D004981008A77DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD459C61D004981008A77DA /* Build configuration list for PBXNativeTarget "BromiumCoreUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD459C71D004981008A77DA /* Debug */,
+				8FD459C81D004981008A77DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FD459FB1D004DA2008A77DA /* Build configuration list for PBXNativeTarget "BromiumCoreUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD459FC1D004DA2008A77DA /* Debug */,
+				8FD459FD1D004DA2008A77DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FD459B51D004981008A77DA /* Project object */;
+}
