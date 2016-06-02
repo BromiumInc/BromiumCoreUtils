@@ -115,6 +115,7 @@
     XCTAssertTrue(cleanupSuc, @"cleanup failed: %@", error);
     ssize_t readBytes = read(pipe_fds[0], buf, 1024);
     XCTAssertEqual(0, readBytes);
+    close(pipe_fds[0]);
 }
 
 - (void)testDeleteFileSystemItemConvenienceMethodWorks
