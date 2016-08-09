@@ -1,9 +1,10 @@
 //
-//  BRUConcurrentBox.m
-//  BromiumUtils
+//  Copyright (C) 2013-2016, Bromium Inc.
+//
+//  This software may be modified and distributed under the terms
+//  of the BSD license.  See the LICENSE file for details.
 //
 //  Created by Johannes Weiß on 04/11/2013.
-//  Copyright (c) 2013 Bromium UK Ltd. All rights reserved.
 //
 
 /* Standard Library */
