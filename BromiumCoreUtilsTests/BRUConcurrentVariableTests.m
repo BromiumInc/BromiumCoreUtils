@@ -1,9 +1,10 @@
 //
-//  BRUConcurrentVariableTests.m
-//  BromiumUtils
+//  Copyright (C) 2013-2016, Bromium Inc.
+//
+//  This software may be modified and distributed under the terms
+//  of the BSD license.  See the LICENSE file for details.
 //
 //  Created by Johannes Weiß on 25/03/2015.
-//  Copyright (c) 2015 Bromium UK Ltd. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
