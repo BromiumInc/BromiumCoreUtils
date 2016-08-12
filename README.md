@@ -17,6 +17,7 @@ depend on AppKit or any third party libraries.
  - `BRUNullabilityUtils` --  Nullability helpers.
  - `BRURateLimiter` -- Utility for rate limiting operations.
  - `BRUResourceCleanup` --  An helper object to handle resource cleanup if a sequence of resource acquiring operations fails midway.
+ - `BRURetry` -- Utility class for managing the lifecycle of retryable actions.
  - `BRUSetDiffFormatter` --  Helper function to calculate and format a diff of sets.
  - `BRUTask` --  An drop-in `NSTask` replacement.
  - `BRUTemporaryFiles` --  Temporary file and directory utilities.

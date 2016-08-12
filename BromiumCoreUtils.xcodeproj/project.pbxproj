@@ -48,6 +48,10 @@
 		D824E7941D5C9669008E79F8 /* BRUFileMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D824E7931D5C9669008E79F8 /* BRUFileMonitorTests.m */; };
 		D8800D741D5DD90B0056D483 /* BRURateLimiter.h in Headers */ = {isa = PBXBuildFile; fileRef = D8800D721D5DD90B0056D483 /* BRURateLimiter.h */; };
 		D8800D751D5DD90B0056D483 /* BRURateLimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800D731D5DD90B0056D483 /* BRURateLimiter.m */; };
+		D8800D6C1D5DD5F20056D483 /* BRURetry.h in Headers */ = {isa = PBXBuildFile; fileRef = D8800D6A1D5DD5F20056D483 /* BRURetry.h */; };
+		D8800D6D1D5DD5F20056D483 /* BRURetry.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800D6B1D5DD5F20056D483 /* BRURetry.m */; };
+		D8800D6F1D5DD5FC0056D483 /* BRURetryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800D6E1D5DD5FC0056D483 /* BRURetryTests.m */; };
+		D8800D711D5DD6450056D483 /* BRUEqualityUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D8800D701D5DD6450056D483 /* BRUEqualityUtils.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,10 @@
 		D824E7931D5C9669008E79F8 /* BRUFileMonitorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUFileMonitorTests.m; sourceTree = "<group>"; };
 		D8800D721D5DD90B0056D483 /* BRURateLimiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRURateLimiter.h; sourceTree = "<group>"; };
 		D8800D731D5DD90B0056D483 /* BRURateLimiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRURateLimiter.m; sourceTree = "<group>"; };
+		D8800D6A1D5DD5F20056D483 /* BRURetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRURetry.h; sourceTree = "<group>"; };
+		D8800D6B1D5DD5F20056D483 /* BRURetry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRURetry.m; sourceTree = "<group>"; };
+		D8800D6E1D5DD5FC0056D483 /* BRURetryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRURetryTests.m; sourceTree = "<group>"; };
+		D8800D701D5DD6450056D483 /* BRUEqualityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUEqualityUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,9 @@
 			children = (
 				D8800D721D5DD90B0056D483 /* BRURateLimiter.h */,
 				D8800D731D5DD90B0056D483 /* BRURateLimiter.m */,
+				D8800D701D5DD6450056D483 /* BRUEqualityUtils.h */,
+				D8800D6A1D5DD5F20056D483 /* BRURetry.h */,
+				D8800D6B1D5DD5F20056D483 /* BRURetry.m */,
 				D824E78E1D5C965B008E79F8 /* BRUFileMonitor.h */,
 				D824E78F1D5C965B008E79F8 /* BRUFileMonitor.m */,
 				8FD459C91D004A92008A77DA /* BRUARCUtils.h */,
@@ -185,6 +196,7 @@
 		8FD459F41D004DA2008A77DA /* BromiumCoreUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
+				D8800D6E1D5DD5FC0056D483 /* BRURetryTests.m */,
 				D824E7921D5C9669008E79F8 /* BRUFileMonitorTests.h */,
 				D824E7931D5C9669008E79F8 /* BRUFileMonitorTests.m */,
 				8FD459FF1D004EFD008A77DA /* BRUConcurrentBoxTests.m */,
@@ -212,11 +224,13 @@
 				8FD459DE1D004A92008A77DA /* BRUAsserts.h in Headers */,
 				8FD459E51D004A92008A77DA /* BRUDispatchUtils.h in Headers */,
 				8FD459E81D004A92008A77DA /* BRUNullabilityUtils.h in Headers */,
+				D8800D6C1D5DD5F20056D483 /* BRURetry.h in Headers */,
 				8FD459DD1D004A92008A77DA /* BRUArithmetic.h in Headers */,
 				D824E7901D5C965B008E79F8 /* BRUFileMonitor.h in Headers */,
 				8FD459EB1D004A92008A77DA /* BRUTask.h in Headers */,
 				8FD45A0D1D004F5C008A77DA /* BRUTemporaryFiles.h in Headers */,
 				8FD459E61D004A92008A77DA /* BRUEitherErrorOrSuccess.h in Headers */,
+				D8800D711D5DD6450056D483 /* BRUEqualityUtils.h in Headers */,
 				8FD459DC1D004A92008A77DA /* BRUARCUtils.h in Headers */,
 				D8800D741D5DD90B0056D483 /* BRURateLimiter.h in Headers */,
 				8FD459E31D004A92008A77DA /* BRUConcurrentVariable.h in Headers */,
@@ -326,6 +340,7 @@
 				8FD45A121D005004008A77DA /* BRUSetDiffFormatter.m in Sources */,
 				8FD459E41D004A92008A77DA /* BRUConcurrentVariable.m in Sources */,
 				D824E7911D5C965B008E79F8 /* BRUFileMonitor.m in Sources */,
+				D8800D6D1D5DD5F20056D483 /* BRURetry.m in Sources */,
 				8FD45A0E1D004F5C008A77DA /* BRUTemporaryFiles.m in Sources */,
 				8FD459EC1D004A92008A77DA /* BRUTask.m in Sources */,
 				8FD459EA1D004A92008A77DA /* BRUResourceCleanup.m in Sources */,
@@ -338,6 +353,7 @@
 			files = (
 				8FD45A071D004EFD008A77DA /* BRUResourceCleanupTests.m in Sources */,
 				8FD45A051D004EFD008A77DA /* BRUTaskTests.m in Sources */,
+				D8800D6F1D5DD5FC0056D483 /* BRURetryTests.m in Sources */,
 				8FD45A1E1D005712008A77DA /* BRUDeferredTests.m in Sources */,
 				8FD45A081D004EFD008A77DA /* BRUConcurrentVariableTests.m in Sources */,
 				8FD45A141D005062008A77DA /* BRUSetDiffFormatterTests.m in Sources */,
