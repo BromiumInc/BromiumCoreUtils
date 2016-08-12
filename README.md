@@ -14,6 +14,7 @@ depend on AppKit or any third party libraries.
  - `BRUDispatchUtils` --  Helpers for GCD/libdispatch.
  - `BRUEitherErrorOrSuccess` --  A simple data type to represent failure or success of computations.
  - `BRUFileMonitor` -- A simple mechanism for monitoring file changes.
+ - `BRUMemoryRegion` -- Safe memory region representation and methods.
  - `BRUNullabilityUtils` --  Nullability helpers.
  - `BRURateLimiter` -- Utility for rate limiting operations.
  - `BRUResourceCleanup` --  An helper object to handle resource cleanup if a sequence of resource acquiring operations fails midway.

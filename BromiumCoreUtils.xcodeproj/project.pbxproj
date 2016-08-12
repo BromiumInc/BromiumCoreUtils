@@ -48,6 +48,8 @@
 		D824E7941D5C9669008E79F8 /* BRUFileMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D824E7931D5C9669008E79F8 /* BRUFileMonitorTests.m */; };
 		D8800D741D5DD90B0056D483 /* BRURateLimiter.h in Headers */ = {isa = PBXBuildFile; fileRef = D8800D721D5DD90B0056D483 /* BRURateLimiter.h */; };
 		D8800D751D5DD90B0056D483 /* BRURateLimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800D731D5DD90B0056D483 /* BRURateLimiter.m */; };
+		D8800D781D5DDD960056D483 /* BRUMemoryRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = D8800D761D5DDD960056D483 /* BRUMemoryRegion.h */; };
+		D8800D791D5DDD960056D483 /* BRUMemoryRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800D771D5DDD960056D483 /* BRUMemoryRegion.m */; };
 		D8800D6C1D5DD5F20056D483 /* BRURetry.h in Headers */ = {isa = PBXBuildFile; fileRef = D8800D6A1D5DD5F20056D483 /* BRURetry.h */; };
 		D8800D6D1D5DD5F20056D483 /* BRURetry.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800D6B1D5DD5F20056D483 /* BRURetry.m */; };
 		D8800D6F1D5DD5FC0056D483 /* BRURetryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800D6E1D5DD5FC0056D483 /* BRURetryTests.m */; };
@@ -109,6 +111,8 @@
 		D824E7931D5C9669008E79F8 /* BRUFileMonitorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUFileMonitorTests.m; sourceTree = "<group>"; };
 		D8800D721D5DD90B0056D483 /* BRURateLimiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRURateLimiter.h; sourceTree = "<group>"; };
 		D8800D731D5DD90B0056D483 /* BRURateLimiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRURateLimiter.m; sourceTree = "<group>"; };
+		D8800D761D5DDD960056D483 /* BRUMemoryRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUMemoryRegion.h; sourceTree = "<group>"; };
+		D8800D771D5DDD960056D483 /* BRUMemoryRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUMemoryRegion.m; sourceTree = "<group>"; };
 		D8800D6A1D5DD5F20056D483 /* BRURetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRURetry.h; sourceTree = "<group>"; };
 		D8800D6B1D5DD5F20056D483 /* BRURetry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRURetry.m; sourceTree = "<group>"; };
 		D8800D6E1D5DD5FC0056D483 /* BRURetryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRURetryTests.m; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 			children = (
 				D8800D721D5DD90B0056D483 /* BRURateLimiter.h */,
 				D8800D731D5DD90B0056D483 /* BRURateLimiter.m */,
+				D8800D761D5DDD960056D483 /* BRUMemoryRegion.h */,
+				D8800D771D5DDD960056D483 /* BRUMemoryRegion.m */,
 				D8800D701D5DD6450056D483 /* BRUEqualityUtils.h */,
 				D8800D6A1D5DD5F20056D483 /* BRURetry.h */,
 				D8800D6B1D5DD5F20056D483 /* BRURetry.m */,
@@ -222,6 +228,7 @@
 				8FD459E01D004A92008A77DA /* BRUBaseDefines.h in Headers */,
 				8FD459E11D004A92008A77DA /* BRUConcurrentBox.h in Headers */,
 				8FD459DE1D004A92008A77DA /* BRUAsserts.h in Headers */,
+				D8800D781D5DDD960056D483 /* BRUMemoryRegion.h in Headers */,
 				8FD459E51D004A92008A77DA /* BRUDispatchUtils.h in Headers */,
 				8FD459E81D004A92008A77DA /* BRUNullabilityUtils.h in Headers */,
 				D8800D6C1D5DD5F20056D483 /* BRURetry.h in Headers */,
@@ -330,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8800D791D5DDD960056D483 /* BRUMemoryRegion.m in Sources */,
 				8FD459E21D004A92008A77DA /* BRUConcurrentBox.m in Sources */,
 				8FD459DF1D004A92008A77DA /* BRUAsserts.m in Sources */,
 				8FD459E71D004A92008A77DA /* BRUEitherErrorOrSuccess.m in Sources */,
@@ -461,6 +469,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				OTHER_CFLAGS = (
 					"-fsanitize=bool",
@@ -497,6 +506,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				OTHER_CFLAGS = (
 					"-fsanitize=bool",
