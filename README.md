@@ -15,6 +15,7 @@ depend on AppKit or any third party libraries.
  - `BRUEitherErrorOrSuccess` --  A simple data type to represent failure or success of computations.
  - `BRUFileMonitor` -- A simple mechanism for monitoring file changes.
  - `BRUNullabilityUtils` --  Nullability helpers.
+ - `BRURateLimiter` -- Utility for rate limiting operations.
  - `BRUResourceCleanup` --  An helper object to handle resource cleanup if a sequence of resource acquiring operations fails midway.
  - `BRUSetDiffFormatter` --  Helper function to calculate and format a diff of sets.
  - `BRUTask` --  An drop-in `NSTask` replacement.
